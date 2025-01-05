@@ -1,0 +1,16 @@
+models:
+  - name: cleaned_sales
+    description: "Cleans raw Walmart sales data by selecting relevant fields."
+    columns:
+      - name: WEEKLY_SALES
+        description: "Weekly sales for each store."
+        tests:
+          - not_null
+      - name: TEMPERATURE
+        description: "Temperature data for each week."
+        tests:
+          - not_null
+      - name: CPI
+        description: "Consumer Price Index for each week."
+      - name: UNEMPLOYMENT
+        description: "Unemployment rate for each week."

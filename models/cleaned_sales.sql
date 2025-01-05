@@ -1,0 +1,14 @@
+WITH CLEANED_DATA AS (
+    SELECT
+        STORE,
+        DATE,
+        WEEKLY_SALES,
+        HOLIDAY_FLAG,
+        TEMPERATURE,
+        FUEL_PRICE,
+        CPI,
+        UNEMPLOYMENT
+    FROM {{ source('WALMART_SALES_DB', 'WALMART_SALES') }}
+)
+SELECT * FROM CLEANED_DATA
+

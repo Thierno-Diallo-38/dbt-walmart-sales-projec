@@ -1,0 +1,14 @@
+name: walmart_sales_project
+version: "1.0"
+config-version: 2
+
+profile: walmart_sales_project
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  walmart_sales_project:
+    +materialized: view

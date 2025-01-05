@@ -1,0 +1,32 @@
+sources:
+  - name: WALMART_SALES_DB
+    schema: PUBLIC
+    tables:
+      - name: WALMART_SALES
+
+
+version: 2
+
+sources:
+  - name: WALMART_SALES_DB
+    schema: PUBLIC
+    tables:
+      - name: WALMART_SALES
+        description: "Raw sales data for Walmart stores."
+        columns:
+          - name: STORE
+            description: "Unique identifier for each store."
+          - name: DATE
+            description: "Date of the sales record."
+          - name: WEEKLY_SALES
+            description: "Weekly sales amount in USD."
+          - name: HOLIDAY_FLAG
+            description: "Indicates whether the week contains a holiday (1 for yes, 0 for no)."
+          - name: TEMPERATURE
+            description: "Average temperature during the week (in Fahrenheit)."
+          - name: FUEL_PRICE
+            description: "Average fuel price during the week."
+          - name: CPI
+            description: "Consumer Price Index for the week."
+          - name: UNEMPLOYMENT
+            description: "Unemployment rate for the week."
